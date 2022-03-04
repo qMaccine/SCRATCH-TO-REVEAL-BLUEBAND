@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+}
+
+
+#bridgeContainer {
+  background-image: url("img/backgroundUpdated.png");
+  width: 300px;
+  height: 250px;
+}
+#bridge {
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+}
+
+#scratchText {
+  position: absolute;
+  z-index: 1;
+  top: 152px;
+}
+
+.zoom {
+  animation:move 3s ease; /* Change this to alternate to stop the loop. */
+  -ms-animation:move 3s ease;
+  -webkit-animation:move 3s ease;
+  -0-animation:move 3s ease;
+  -moz-animation:move 3s ease;
+  -webkit-animation-fill-mode: forwards;
+  position: absolute;
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform: scale(1.0);
+    -ms-transform: scale(1.0); /* IE 9 */
+    -webkit-transform: scale(1.0); /* Safari and Chrome */
+    -o-transform: scale(1.0); /* Opera */
+    -moz-transform: scale(1.0); /* Firefox */
+  }
+  16.67% {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari and Chrome */
+    -o-transform: scale(1.1); /* Opera */
+    -moz-transform: scale(1.1); /* Firefox */
+  }
+  33.37% {
+    transform: scale(1.0);
+    -ms-transform: scale(1.0); /* IE 9 */
+    -webkit-transform: scale(1.0); /* Safari and Chrome */
+    -o-transform: scale(1.0); /* Opera */
+    -moz-transform: scale(1.0); /* Firefox */
+  }
+  50% {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari and Chrome */
+    -o-transform: scale(1.1); /* Opera */
+    -moz-transform: scale(1.1); /* Firefox */
+  }
+  66.67% {
+    transform: scale(1.0);
+    -ms-transform: scale(1.0); /* IE 9 */
+    -webkit-transform: scale(1.0); /* Safari and Chrome */
+    -o-transform: scale(1.0); /* Opera */
+    -moz-transform: scale(1.0); /* Firefox */
+  }
+    83.33% {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari and Chrome */
+    -o-transform: scale(1.1); /* Opera */
+    -moz-transform: scale(1.1); /* Firefox */
+  }
+  100% {
+    transform: scale(1.0);
+    -ms-transform: scale(1.0); /* IE 9 */
+    -webkit-transform: scale(1.0); /* Safari and Chrome */
+    -o-transform: scale(1.0); /* Opera */
+    -moz-transform: scale(1.0); /* Firefox */
+  }
+  
+}
+
+
+.tap {
+    z-index: 1;
+    position: absolute;
+    top: 115px;
+    left: 55px;
+    height: 32px;
+    -webkit-animation: drag 1s 500 linear;
+}
+
+@-webkit-keyframes drag {
+     0% {
+      -webkit-transform: rotate(-60deg);
+    }
+    50% {
+      -webkit-transform: rotate(60deg);
+    }
+    100% {
+      -webkit-transform: rotate(-60deg);
+    }
+}
+
+.scratchEffect {
+    z-index: 1;
+    position: absolute;
+    top: 105px;
+    left: 188px;
+    /*width: 32px;*/
+    height: 60px;
+    -webkit-animation: scratch 3s 500 linear;
+}
+
+@-webkit-keyframes scratch {
+     0% {
+      -webkit-transform: translate(0px, 0px);
+    }
+    10% {
+      -webkit-transform: translate(-30px, -20px);
+    }
+    20% {
+      -webkit-transform: translate(-60px, 0px);
+    }
+    30% {
+      -webkit-transform: translate(-90px, -20px);
+    }
+    40% {
+      -webkit-transform: translate(-120px, 0px);
+    }
+    50% {
+      -webkit-transform: translate(-150px, -20px);
+    }
+    60% {
+      -webkit-transform: translate(-120px, 0px);
+    }
+    70% {
+      -webkit-transform: translate(-90px, -20px);
+    }
+    80% {
+      -webkit-transform: translate(-60px, 0px);
+    }
+    90% {
+      -webkit-transform: translate(-30px, -20px);
+    }
+    100% {
+      -webkit-transform: translate(0px, 0px);
+    }
+}
+
+
+
+.bounce {
+  animation:bounce 1s ease; /* Change this to alternate to stop the loop. */
+  -ms-animation:bounce 1s ease;
+  -webkit-animation:bounce 1s ease;
+  -0-animation:bounce 1s ease;
+  -moz-animation:bounce 1s ease;
+  -webkit-animation-fill-mode: forwards;
+  /*animation-delay: 10s;*/
+  position: absolute;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(1.0);
+    -ms-transform: scale(1.0); /* IE 9 */
+    -webkit-transform: scale(1.0); /* Safari and Chrome */
+    -o-transform: scale(1.0); /* Opera */
+    -moz-transform: scale(1.0); /* Firefox */
+  }
+  50% {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari and Chrome */
+    -o-transform: scale(1.1); /* Opera */
+    -moz-transform: scale(1.1); /* Firefox */
+  }
+  100% {
+    transform: scale(1.0);
+    -ms-transform: scale(1.0); /* IE 9 */
+    -webkit-transform: scale(1.0); /* Safari and Chrome */
+    -o-transform: scale(1.0); /* Opera */
+    -moz-transform: scale(1.0); /* Firefox */
+  }
+ 
+}
+
