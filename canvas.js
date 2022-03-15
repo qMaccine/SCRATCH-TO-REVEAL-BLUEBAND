@@ -115,7 +115,10 @@
   
 })();
 
-$('#bridgeContainer').on('click', function() {
-  $('#bridgeContainer').css('background-image', 'url(img/new_price.png');
+$('#bridgeContainer').on('mouseover', function() {
+  setTimeout(function(){ 
+    $('#bridgeContainer').css('background-image', 'url(img/new_price.png');
+  },1500); 
+  
 })
 
